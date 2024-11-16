@@ -12,6 +12,7 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.693.0",
     "@aws-sdk/util-dynamodb": "^3.693.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.2"
   },
   "devDependencies": {

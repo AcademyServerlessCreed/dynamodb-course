@@ -23,7 +23,7 @@ import {
   SECTION_1_ACCESS_KEY,
   SECTION_1_SECRET_KEY,
   SECTION_1_TABLE_NAME,
-} from "../prodkey";
+} from "../key";
 
 // Pre-initialized DynamoDB client
 const client = new DynamoDBClient({
