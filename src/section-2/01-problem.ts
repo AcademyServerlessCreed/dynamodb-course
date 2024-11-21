@@ -33,6 +33,7 @@ import {
   SECTION_2_ACCESS_KEY,
   SECTION_2_SECRET_KEY,
   SECTION_2_TABLE_NAME,
+  
 } from "../key";
 // Initialize DynamoDB client
 const client = new DynamoDBClient({
@@ -43,6 +44,7 @@ const client = new DynamoDBClient({
     secretAccessKey: SECTION_2_SECRET_KEY,
   },
 });
+const TABLE_NAME = SECTION_2_TABLE_NAME;
 
 // Product interface for type checking
 interface Product {
@@ -132,7 +134,7 @@ async function runTests() {
 
     console.log('\n🎉 All tests passed! Your implementation is working correctly!');
 
-  } catch (error) {
+  } catch (error:any) {
     console.error('\n❌ Test failed:', error.message);
     console.log('\n💡 Tip: Check if you have:');
     console.log('1. Properly constructed the composite key (PK and SK)');

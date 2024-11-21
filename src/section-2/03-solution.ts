@@ -32,10 +32,6 @@ async function updateInventory(
       SK: `METADATA#${request.productId}`,
     });
 
-    // Determine the update operation
-    const quantityUpdate =
-      request.operation === "add" ? "stock + :quantity" : "stock - :quantity";
-
     // Marshall the expression attribute values
     const expressionAttributeValues = marshall({
       ":quantity": String(request.quantity),
@@ -48,7 +44,8 @@ async function updateInventory(
       Key: key,
       UpdateExpression: `SET stock = :quantity,
                         lastUpdated = :updateTime`,
-      ConditionExpression: "attribute_not_exists(stock) OR (attribute_exists(stock) AND stock >= :zero)",
+      ConditionExpression:
+        "attribute_not_exists(stock) OR (attribute_exists(stock) AND stock >= :zero)",
       ExpressionAttributeValues: expressionAttributeValues,
       ReturnValues: "ALL_NEW",
     });
@@ -121,7 +118,7 @@ async function runTests() {
     console.log("📦 New stock level:", result2.data?.stock);
 
     console.log("\n-------------------\n");
-   
+
     // Test 3: Concurrent updates
     console.log("Test 3: Testing concurrent updates");
     const updates = await Promise.all([

@@ -28,8 +28,23 @@ import {
   DeleteItemCommandOutput,
 } from "@aws-sdk/client-dynamodb";
 import { marshall, unmarshall } from "@aws-sdk/util-dynamodb";
+import {
+  REGION,
+  SECTION_2_ACCESS_KEY,
+  SECTION_2_SECRET_KEY,
+  SECTION_2_TABLE_NAME_PUT_DELETE,
+} from "../key";
 import assert from "assert";
 
+const client = new DynamoDBClient({
+  region: REGION,
+  credentials: {
+    accessKeyId: SECTION_2_ACCESS_KEY,
+    secretAccessKey: SECTION_2_SECRET_KEY,
+  },
+});
+
+const TABLE_NAME = SECTION_2_TABLE_NAME_PUT_DELETE;
 // Response interface for delete operation
 interface DeleteResponse {
   success: boolean;
