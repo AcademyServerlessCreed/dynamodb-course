@@ -1,0 +1,632 @@
+[
+  {
+    "device_type": "mobile",
+    "SK": "DEVICE#MOBILE#D001",
+    "last_access": "2024-01-20",
+    "entity_type": "DEVICE",
+    "PK": "USER#1001",
+    "device_model": "iPhone 13"
+  },
+  {
+    "device_type": "smart_tv",
+    "SK": "DEVICE#TV#D002",
+    "last_access": "2024-01-19",
+    "entity_type": "DEVICE",
+    "PK": "USER#1001",
+    "device_model": "Samsung TV"
+  },
+  {
+    "entity_type": "USER",
+    "SK": "PROFILE#1001",
+    "subscription_tier": "premium",
+    "preferences": {
+      "mature_content": false,
+      "preferred_languages": [
+        "English",
+        "Spanish"
+      ],
+      "autoplay": true,
+      "subtitle_language": "English"
+    },
+    "PK": "USER#1001",
+    "email": "john.doe@email.com",
+    "name": "John Doe"
+  },
+  {
+    "movie_id": "MOVIE#101",
+    "SK": "RATING#MOVIE#101",
+    "entity_type": "RATING",
+    "PK": "USER#1001",
+    "rating": 5
+  },
+  {
+    "auto_renewal": true,
+    "entity_type": "BILLING",
+    "subscription_type": "premium",
+    "billing_cycle": "monthly",
+    "SK": "SUBSCRIPTION#2024-01",
+    "PK": "USER#1001",
+    "subscription_date": "2024-01-01"
+  },
+  {
+    "completed": true,
+    "movie_id": "MOVIE#101",
+    "SK": "VIEWING#2024-01-20#MOVIE#101",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 3600,
+    "PK": "USER#1001"
+  },
+  {
+    "completed": true,
+    "movie_id": "MOVIE#104",
+    "SK": "VIEWING#2024-01-21#MOVIE#104",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 7800,
+    "PK": "USER#1001"
+  },
+  {
+    "movie_id": "MOVIE#101",
+    "SK": "WATCHLIST#MOVIE#101",
+    "entity_type": "WATCHLIST",
+    "added_date": "2024-01-15",
+    "PK": "USER#1001"
+  },
+  {
+    "entity_type": "MOVIE",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "audio": [
+        "English",
+        "Spanish"
+      ]
+    },
+    "director": "Director2",
+    "rating": "PG-13",
+    "release_year": 2023,
+    "SK": "METADATA",
+    "cast": [
+      "Actor3",
+      "Actor4"
+    ],
+    "PK": "MOVIE#102",
+    "duration": 8100,
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "title": "The Last Knight"
+  },
+  {
+    "average_rating": 4.7,
+    "SK": "STATS",
+    "entity_type": "MOVIE_STATS",
+    "PK": "MOVIE#102",
+    "total_views": 200000,
+    "completion_rate": 0.9
+  },
+  {
+    "device_type": "laptop",
+    "SK": "DEVICE#LAPTOP#D001",
+    "last_access": "2024-01-20",
+    "entity_type": "DEVICE",
+    "PK": "USER#1005",
+    "device_model": "MacBook Pro"
+  },
+  {
+    "entity_type": "USER",
+    "SK": "PROFILE#1005",
+    "subscription_tier": "basic",
+    "preferences": {
+      "mature_content": true,
+      "preferred_languages": [
+        "English"
+      ],
+      "autoplay": true,
+      "subtitle_language": "English"
+    },
+    "PK": "USER#1005",
+    "email": "alex.brown@email.com",
+    "name": "Alex Brown"
+  },
+  {
+    "SK": "RATING#SERIES#203",
+    "entity_type": "RATING",
+    "PK": "USER#1005",
+    "series_id": "SERIES#203",
+    "rating": 3
+  },
+  {
+    "auto_renewal": true,
+    "entity_type": "BILLING",
+    "subscription_type": "basic",
+    "billing_cycle": "monthly",
+    "SK": "SUBSCRIPTION#2024-01",
+    "PK": "USER#1005",
+    "subscription_date": "2024-01-20"
+  },
+  {
+    "completed": false,
+    "movie_id": "MOVIE#102",
+    "SK": "VIEWING#2024-01-20#MOVIE#102",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 4500,
+    "PK": "USER#1005"
+  },
+  {
+    "device_type": "tablet",
+    "SK": "DEVICE#TABLET#D001",
+    "last_access": "2024-01-21",
+    "entity_type": "DEVICE",
+    "PK": "USER#1004",
+    "device_model": "iPad Pro"
+  },
+  {
+    "entity_type": "USER",
+    "SK": "PROFILE#1004",
+    "subscription_tier": "premium",
+    "preferences": {
+      "mature_content": false,
+      "preferred_languages": [
+        "English",
+        "German"
+      ],
+      "autoplay": true,
+      "subtitle_language": "German"
+    },
+    "PK": "USER#1004",
+    "email": "sarah.wilson@email.com",
+    "name": "Sarah Wilson"
+  },
+  {
+    "movie_id": "MOVIE#105",
+    "SK": "RATING#MOVIE#105",
+    "entity_type": "RATING",
+    "PK": "USER#1004",
+    "rating": 4
+  },
+  {
+    "auto_renewal": true,
+    "entity_type": "BILLING",
+    "subscription_type": "premium",
+    "billing_cycle": "monthly",
+    "SK": "SUBSCRIPTION#2024-01",
+    "PK": "USER#1004",
+    "subscription_date": "2024-01-15"
+  },
+  {
+    "completed": true,
+    "movie_id": "MOVIE#101",
+    "SK": "VIEWING#2024-01-18#MOVIE#101",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 7200,
+    "PK": "USER#1004"
+  },
+  {
+    "SK": "WATCHLIST#SERIES#201",
+    "entity_type": "WATCHLIST",
+    "added_date": "2024-01-17",
+    "PK": "USER#1004",
+    "series_id": "SERIES#201"
+  },
+  {
+    "entity_type": "MOVIE",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "audio": [
+        "English",
+        "Spanish"
+      ]
+    },
+    "director": "Director4",
+    "rating": "R",
+    "release_year": 2024,
+    "SK": "METADATA",
+    "cast": [
+      "Actor7",
+      "Actor8"
+    ],
+    "PK": "MOVIE#104",
+    "duration": 7800,
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "title": "The Great Heist"
+  },
+  {
+    "average_rating": 4.6,
+    "SK": "STATS",
+    "entity_type": "MOVIE_STATS",
+    "PK": "MOVIE#104",
+    "total_views": 95000,
+    "completion_rate": 0.88
+  },
+  {
+    "entity_type": "MOVIE",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French",
+        "German"
+      ],
+      "audio": [
+        "English",
+        "Spanish",
+        "French"
+      ]
+    },
+    "director": "Director1",
+    "rating": "PG-13",
+    "release_year": 2023,
+    "SK": "METADATA",
+    "cast": [
+      "Actor1",
+      "Actor2"
+    ],
+    "PK": "MOVIE#101",
+    "duration": 7200,
+    "genre": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "title": "The Space Adventure"
+  },
+  {
+    "average_rating": 4.5,
+    "SK": "STATS",
+    "entity_type": "MOVIE_STATS",
+    "PK": "MOVIE#101",
+    "total_views": 150000,
+    "completion_rate": 0.85
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 1,
+    "synopsis": "The rise of tech companies",
+    "SK": "EPISODE#S01E01",
+    "PK": "SERIES#202",
+    "duration": 3600,
+    "season_number": 1,
+    "title": "Silicon Valley Dreams"
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 2,
+    "synopsis": "How technology changed our lives",
+    "SK": "EPISODE#S01E02",
+    "PK": "SERIES#202",
+    "duration": 3600,
+    "season_number": 1,
+    "title": "Digital Revolution"
+  },
+  {
+    "entity_type": "SERIES",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "audio": [
+        "English"
+      ]
+    },
+    "creator": "Creator2",
+    "SK": "METADATA",
+    "seasons": 2,
+    "PK": "SERIES#202",
+    "total_episodes": 16,
+    "genre": [
+      "Documentary",
+      "Technology"
+    ],
+    "title": "Tech Giants"
+  },
+  {
+    "average_rating": 4.6,
+    "SK": "STATS",
+    "entity_type": "SERIES_STATS",
+    "PK": "SERIES#202",
+    "total_views": 250000,
+    "completion_rate": 0.85
+  },
+  {
+    "entity_type": "USER",
+    "SK": "PROFILE#1003",
+    "subscription_tier": "premium",
+    "preferences": {
+      "mature_content": true,
+      "preferred_languages": [
+        "English",
+        "French"
+      ],
+      "autoplay": true,
+      "subtitle_language": "French"
+    },
+    "PK": "USER#1003",
+    "email": "mike.johnson@email.com",
+    "name": "Mike Johnson"
+  },
+  {
+    "SK": "RATING#SERIES#202",
+    "entity_type": "RATING",
+    "PK": "USER#1003",
+    "series_id": "SERIES#202",
+    "rating": 5
+  },
+  {
+    "auto_renewal": true,
+    "entity_type": "BILLING",
+    "subscription_type": "premium",
+    "billing_cycle": "monthly",
+    "SK": "SUBSCRIPTION#2024-01",
+    "PK": "USER#1003",
+    "subscription_date": "2024-01-10"
+  },
+  {
+    "completed": true,
+    "SK": "VIEWING#2024-01-20#SERIES#202",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 3600,
+    "PK": "USER#1003",
+    "series_id": "SERIES#202"
+  },
+  {
+    "movie_id": "MOVIE#103",
+    "SK": "WATCHLIST#MOVIE#103",
+    "entity_type": "WATCHLIST",
+    "added_date": "2024-01-18",
+    "PK": "USER#1003"
+  },
+  {
+    "entity_type": "USER",
+    "SK": "PROFILE#1002",
+    "subscription_tier": "basic",
+    "preferences": {
+      "mature_content": true,
+      "preferred_languages": [
+        "English"
+      ],
+      "autoplay": false,
+      "subtitle_language": "English"
+    },
+    "PK": "USER#1002",
+    "email": "jane.smith@email.com",
+    "name": "Jane Smith"
+  },
+  {
+    "movie_id": "MOVIE#102",
+    "SK": "RATING#MOVIE#102",
+    "entity_type": "RATING",
+    "PK": "USER#1002",
+    "rating": 4
+  },
+  {
+    "auto_renewal": true,
+    "entity_type": "BILLING",
+    "subscription_type": "basic",
+    "billing_cycle": "monthly",
+    "SK": "SUBSCRIPTION#2024-01",
+    "PK": "USER#1002",
+    "subscription_date": "2024-01-05"
+  },
+  {
+    "completed": true,
+    "movie_id": "MOVIE#102",
+    "SK": "VIEWING#2024-01-19#MOVIE#102",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 5400,
+    "PK": "USER#1002"
+  },
+  {
+    "completed": true,
+    "SK": "VIEWING#2024-01-20#SERIES#201",
+    "entity_type": "VIEWING_HISTORY",
+    "watch_duration": 2700,
+    "PK": "USER#1002",
+    "series_id": "SERIES#201"
+  },
+  {
+    "SK": "WATCHLIST#SERIES#203",
+    "entity_type": "WATCHLIST",
+    "added_date": "2024-01-21",
+    "PK": "USER#1002",
+    "series_id": "SERIES#203"
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 1,
+    "synopsis": "The beginning of the mystery unfolds",
+    "SK": "EPISODE#S01E01",
+    "PK": "SERIES#201",
+    "duration": 2700,
+    "season_number": 1,
+    "title": "Pilot"
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 2,
+    "synopsis": "A shocking revelation changes everything",
+    "SK": "EPISODE#S01E02",
+    "PK": "SERIES#201",
+    "duration": 2700,
+    "season_number": 1,
+    "title": "The Discovery"
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 1,
+    "synopsis": "The story continues",
+    "SK": "EPISODE#S02E01",
+    "PK": "SERIES#201",
+    "duration": 2700,
+    "season_number": 2,
+    "title": "New Beginnings"
+  },
+  {
+    "entity_type": "SERIES",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "audio": [
+        "English",
+        "Spanish"
+      ]
+    },
+    "creator": "Creator1",
+    "SK": "METADATA",
+    "seasons": 3,
+    "PK": "SERIES#201",
+    "total_episodes": 24,
+    "genre": [
+      "Mystery",
+      "Drama"
+    ],
+    "title": "Mystery Lane"
+  },
+  {
+    "average_rating": 4.4,
+    "SK": "STATS",
+    "entity_type": "SERIES_STATS",
+    "PK": "SERIES#201",
+    "total_views": 300000,
+    "completion_rate": 0.82
+  },
+  {
+    "entity_type": "MOVIE",
+    "languages": {
+      "subtitles": [
+        "English",
+        "French",
+        "Spanish"
+      ],
+      "audio": [
+        "English",
+        "French"
+      ]
+    },
+    "director": "Director3",
+    "rating": "PG-13",
+    "release_year": 2024,
+    "SK": "METADATA",
+    "cast": [
+      "Actor5",
+      "Actor6"
+    ],
+    "PK": "MOVIE#103",
+    "duration": 6300,
+    "genre": [
+      "Romance",
+      "Drama"
+    ],
+    "title": "Love in Paris"
+  },
+  {
+    "average_rating": 4.2,
+    "SK": "STATS",
+    "entity_type": "MOVIE_STATS",
+    "PK": "MOVIE#103",
+    "total_views": 80000,
+    "completion_rate": 0.75
+  },
+  {
+    "entity_type": "MOVIE",
+    "languages": {
+      "subtitles": [
+        "English",
+        "French",
+        "Spanish",
+        "German"
+      ],
+      "audio": [
+        "English",
+        "French"
+      ]
+    },
+    "director": "Director5",
+    "rating": "PG",
+    "release_year": 2023,
+    "SK": "METADATA",
+    "cast": [
+      "Actor9"
+    ],
+    "PK": "MOVIE#105",
+    "duration": 5400,
+    "genre": [
+      "Documentary"
+    ],
+    "title": "Ocean Depths"
+  },
+  {
+    "average_rating": 4.8,
+    "SK": "STATS",
+    "entity_type": "MOVIE_STATS",
+    "PK": "MOVIE#105",
+    "total_views": 120000,
+    "completion_rate": 0.92
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 1,
+    "synopsis": "Chefs compete in their first challenge",
+    "SK": "EPISODE#S01E01",
+    "PK": "SERIES#203",
+    "duration": 3600,
+    "season_number": 1,
+    "title": "The Beginning"
+  },
+  {
+    "entity_type": "EPISODE",
+    "episode_number": 2,
+    "synopsis": "Tensions rise as competition gets tough",
+    "SK": "EPISODE#S01E02",
+    "PK": "SERIES#203",
+    "duration": 3600,
+    "season_number": 1,
+    "title": "Heat of the Kitchen"
+  },
+  {
+    "entity_type": "SERIES",
+    "languages": {
+      "subtitles": [
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "audio": [
+        "English",
+        "Spanish"
+      ]
+    },
+    "creator": "Creator3",
+    "SK": "METADATA",
+    "seasons": 4,
+    "PK": "SERIES#203",
+    "total_episodes": 48,
+    "genre": [
+      "Reality",
+      "Food"
+    ],
+    "title": "Cooking Masters"
+  },
+  {
+    "average_rating": 4.3,
+    "SK": "STATS",
+    "entity_type": "SERIES_STATS",
+    "PK": "SERIES#203",
+    "total_views": 180000,
+    "completion_rate": 0.78
+  }
+]
